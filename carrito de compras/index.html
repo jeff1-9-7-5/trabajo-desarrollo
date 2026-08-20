@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Carrito de Compras</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header-contenido">
+
+            <h1>🛒 Mi Tienda</h1>
+
+            <button id="botonCarrito">
+                🛒 Carrito
+                <span id="contadorCarrito">0</span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="presentacion">
+
+            <h2>Productos disponibles</h2>
+
+            <p>
+                Selecciona los productos que deseas comprar.
+            </p>
+
+        </section>
+
+
+        <!-- PRODUCTOS -->
+
+        <section
+            id="productos"
+            class="productos">
+        </section>
+
+
+        <!-- CARRITO -->
+
+        <section
+            id="seccionCarrito"
+            class="carrito">
+
+            <div class="carrito-header">
+
+                <h2>🛒 Mi carrito</h2>
+
+                <button
+                    id="cerrarCarrito"
+                    class="cerrar">
+                    ✕
+                </button>
+
+            </div>
+
+
+            <div
+                id="listaCarrito"
+                class="lista-carrito">
+            </div>
+
+
+            <div class="resumen">
+
+                <div class="fila">
+                    <span>Subtotal:</span>
+                    <strong id="subtotal">
+                        S/ 0.00
+                    </strong>
+                </div>
+
+                <div class="fila">
+                    <span>Envío:</span>
+                    <strong id="envio">
+                        S/ 0.00
+                    </strong>
+                </div>
+
+                <hr>
+
+                <div class="fila total">
+                    <span>Total:</span>
+                    <strong id="total">
+                        S/ 0.00
+                    </strong>
+                </div>
+
+                <button
+                    id="comprar"
+                    class="btn-comprar">
+                    Finalizar compra
+                </button>
+
+                <button
+                    id="vaciar"
+                    class="btn-vaciar">
+                    Vaciar carrito
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <div
+        id="mensaje"
+        class="mensaje">
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

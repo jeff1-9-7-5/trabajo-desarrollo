@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Buscador de Productos</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>🛒 Buscador de Productos</h1>
+
+        <p>
+            Busca y filtra productos
+        </p>
+
+
+        <div class="filtros">
+
+            <input
+                type="text"
+                id="buscador"
+                placeholder="Buscar producto..."
+            >
+
+
+            <select id="categoria">
+
+                <option value="todos">
+                    Todas las categorías
+                </option>
+
+                <option value="Tecnología">
+                    Tecnología
+                </option>
+
+                <option value="Ropa">
+                    Ropa
+                </option>
+
+                <option value="Hogar">
+                    Hogar
+                </option>
+
+                <option value="Deportes">
+                    Deportes
+                </option>
+
+            </select>
+
+
+            <select id="ordenar">
+
+                <option value="normal">
+                    Ordenar por
+                </option>
+
+                <option value="menor">
+                    Precio: menor a mayor
+                </option>
+
+                <option value="mayor">
+                    Precio: mayor a menor
+                </option>
+
+                <option value="nombre">
+                    Nombre A-Z
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div id="cantidadProductos"
+             class="cantidad">
+        </div>
+
+
+        <div id="productos"
+             class="productos">
+        </div>
+
+
+        <div id="sinResultados"
+             class="sin-resultados">
+
+            No se encontraron productos.
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

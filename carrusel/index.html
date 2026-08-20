@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel de Imágenes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Carrusel de Imágenes</h1>
+
+        <div class="carrusel">
+            <button id="anterior" class="boton">❮</button>
+
+            <div class="imagen-contenedor">
+                <img id="imagen" src="https://picsum.photos/id/1015/800/450" alt="Imagen">
+            </div>
+
+            <button id="siguiente" class="boton">❯</button>
+        </div>
+
+        <p id="contador">Imagen 1 de 5</p>
+
+        <button id="automatico" class="btn-automatico">
+            Iniciar reproducción
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

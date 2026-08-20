@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #43cea2,
+        #185a9d
+    );
+}
+
+.contenedor {
+
+    width: 600px;
+
+    max-width: 90%;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.3);
+}
+
+h1 {
+
+    text-align: center;
+
+    margin-bottom: 5px;
+
+    color: #333;
+}
+
+p {
+
+    text-align: center;
+
+    color: #777;
+}
+
+
+.formulario {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+.formulario input {
+
+    flex: 1;
+
+    padding: 13px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+.formulario button {
+
+    padding: 13px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #185a9d;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.formulario button:hover {
+
+    background: #0e4479;
+}
+
+
+.estadisticas {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-top: 25px;
+
+    padding: 15px;
+
+    background: #f1f1f1;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+}
+
+
+#listaTareas {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin-top: 25px;
+}
+
+
+.tarea-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 14px;
+
+    margin-bottom: 10px;
+
+    background: #f8f8f8;
+
+    border-radius: 10px;
+
+    border-left: 5px solid #185a9d;
+}
+
+
+.tarea-texto {
+
+    flex: 1;
+
+    font-size: 16px;
+
+    color: #333;
+}
+
+
+.completada .tarea-texto {
+
+    text-decoration: line-through;
+
+    color: #999;
+}
+
+
+.btn-editar,
+.btn-eliminar {
+
+    border: none;
+
+    padding: 8px 10px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    color: white;
+}
+
+.btn-editar {
+
+    background: #f39c12;
+}
+
+.btn-eliminar {
+
+    background: #e74c3c;
+}
+
+
+.eliminar-todas {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #333;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+
+    .formulario {
+
+        flex-direction: column;
+    }
+
+    .estadisticas {
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+}

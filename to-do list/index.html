@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Lista de Tareas</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>📝 Lista de Tareas</h1>
+
+        <p>
+            Organiza tus actividades
+        </p>
+
+
+        <div class="formulario">
+
+            <input
+                type="text"
+                id="tarea"
+                placeholder="Escribe una tarea..."
+            >
+
+            <button id="agregar">
+                Agregar
+            </button>
+
+        </div>
+
+
+        <div class="estadisticas">
+
+            <span>
+                Total:
+                <strong id="total">0</strong>
+            </span>
+
+            <span>
+                Completadas:
+                <strong id="completadas">0</strong>
+            </span>
+
+            <span>
+                Pendientes:
+                <strong id="pendientes">0</strong>
+            </span>
+
+        </div>
+
+
+        <ul id="listaTareas"></ul>
+
+
+        <button id="eliminarTodas" class="eliminar-todas">
+            Eliminar todas
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
